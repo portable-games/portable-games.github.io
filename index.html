@@ -51,6 +51,41 @@
 				background-color: #ddd;
 				color: black;
 			}
+			
+			.metroexodus_wrap {
+				position: relative;
+				width: 400px;
+			}
+			
+			.metroexodus_text {
+				position: absolute;
+				width: 100%;
+				margin-top: 100px;
+				font-family: 'Segoe UI';
+				font-size: 35px;
+				color: #fff;
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity .3s, visibility .3s;
+				font-weight: 700;
+				filter: drop-shadow(16px 16px 8px black);
+				pointer-events: none
+			}
+			
+			#metroexodus_img {
+				transition: filter .3s;
+			}
+			
+			.metroexodus_wrap:hover .metroexodus_text {
+				visibility: visible;
+				opacity: 1;				
+			}
+
+			.metroexodus_wrap:hover #metroexodus_img {
+				filter: blur(2px);
+				-webkit-filter: blur(2px);
+				-moz-filter: blur(2px);
+			}
 		</style>
 	</head>
 	<body style="text-align: center;">
@@ -58,10 +93,16 @@
 			<a href="index.html">
 				<img src="website_logo.png" style="width: 200px;" />
 			</a>
-			<a id="a1" style="float: right;" href="about/index.html">About</a>
-			<a id="a2" style="float: right;" href="archive/index.html">Archive</a>
-			<a id="a3" style="float: right;" href="chat/index.html">Chat</a>
-			<a id="a4" style="float: right;" href="support/index.html">Support</a>
+			<a id="a1" style="float: right;" href="about">About</a>
+			<a id="a2" style="float: right;" href="archive">Archive</a>
+			<a id="a3" style="float: right;" href="chat">Chat</a>
+			<a id="a4" style="float: right;" href="support">Support</a>
 		</div>
+		<div class="metroexodus_wrap">			
+			<a id="metroexodus" style="float: left; margin-top: 20px;" href="metroexodus">
+				<img id="metroexodus_img" src="metroexodus/metroexodus.jpg" style="width: 400px;" />
+			</a>
+			<p class="metroexodus_text">Metro Exodus</p>
+		</div>		
 	</body>
 </html>
