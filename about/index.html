@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>About Us | portable-games.ga</title>
+		<link rel="icon" type="image/x-icon" href="../website_icon.ico"/>
+		<style media="screen">      
+			@import url('https://fonts.googleapis.com/css?family=Lobster');
+		
+			html {
+          		background: url("https://i.imgur.com/Nks1nfZ.jpg") no-repeat center center fixed;
+          		background-size: cover;
+          		height: 100%;
+          		overflow: auto;
+            }
+
+			.topnav {
+			  font-family: Lobster;
+			  background-color: #333;
+			  overflow: hidden;
+			  top: 0;
+			  width: 100%;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 13pt;
+			}
+			
+			#a1 {
+				transition: background-color .3s, color .3s;
+			}
+			
+			#a2 {
+				transition: background-color .3s, color .3s;
+			}
+			
+			#a3 {
+				transition: background-color .3s, color .3s;
+			}
+			
+			#a4 {
+				transition: background-color .3s, color .3s;
+			}
+			
+			#a1:hover {
+				background-color: #a6a6a6;
+				color: black;
+			}
+			
+			#a2:hover {
+				background-color: #ddd;
+				color: black;
+			}
+			
+			#a3:hover {
+				background-color: #ddd;
+				color: black;
+			}
+			
+			#a4:hover {
+				background-color: #ddd;
+				color: black;
+			}
+			
+			.topnav a.active {
+				background-color: #4CAF50;
+				color: white;
+			}
+			
+			.dropdown {
+			  float: right;
+			  overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+			  font-size: 13pt;
+			  border: none;
+			  outline: none;
+			  color: white;
+			  padding: 14px 16px;
+			  background-color: inherit;
+			  font-family: inherit;
+			  margin: 0;
+			  transition: background-color .3s, color .3s;
+			}
+
+			.topnav .dropdown:hover .dropbtn {
+			  background-color: #ddd;
+			  color: black;
+			  cursor: pointer;
+			}
+
+			.dropdown-content {
+			  opacity: 0;
+			  visibility: hidden;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 80px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			  transition: opacity .3s, visibility .3s;
+			}
+
+			.dropdown-content a {
+			  float: left;
+			  color: black;
+			  text-align: left;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+
+			.dropdown-content a:hover {
+			  background-color: #ddd;
+			}
+
+			.dropdown:hover .dropdown-content {
+			  opacity: 1;
+			  visibility: visible;
+			}
+			
+			.aboutlayout {
+				background-color: #333;
+				transform: translateY(10px);
+				border-radius: 10px;
+				font-family: Lobster;
+				width: 100%;
+			}
+			
+			#grad1 {
+				background: red;
+				background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+				background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+				background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+				background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		</style>
+	</head>
+	<body style="text-align: center;">
+		<div class="topnav">
+			<a href="../">
+				<img src="../website_logo.png" style="width: 200px;" />
+			</a>			
+			<a id="a2" style="float: right;" href="../archive">Archive</a>
+			<a id="a3" style="float: right;" href="../chat">Chat</a>
+			<a id="a4" style="float: right;" href="../support">Support</a>
+			<div class="dropdown">
+				<button class="dropbtn">More
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a class="active" id="a1" style="float: right; min-width: 80px;" href="">About</a>
+				</div>
+			</div>
+		</div>
+		<div class="aboutlayout">
+			<h1 id="grad1" style="font-size: 45pt;">About Us</h1>
+			<h1 style="color: f2f2f2; text-align: left; font-family: 'Segoe UI'; margin-left: 10px; margin-right: 10px; padding-bottom: 10px; margin-top: -30px;">We install Games and Software, make them portable and upload them on our website, for people that want to carry their Games and Software in their pocket, without the need of installing them. Just unzip the archives, run the game/software's exe and enjoy!</h1>
+		</div>
+	</body>
+</html>
